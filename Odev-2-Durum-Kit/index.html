@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Welcome to Whiplash</h1>
+    </header>
+    <section class="section">
+        <div class="drum-img">
+            <img src="assets/drum.png" alt="">
+        </div>
+
+        <audio id="do" src="audio/boom.wav"></audio>
+        <audio id="re" src="audio/clap.wav"></audio>
+        <audio id="mi" src="audio/hihat.wav"></audio>
+        <audio id="fa" src="audio/kick.wav"></audio>
+        <audio id="sol" src="audio/openhat.wav"></audio>
+        <audio id="la" src="audio/ride.wav"></audio>
+        <audio id="si" src="audio/snare.wav"></audio>
+        <audio id="thick-do" src="audio/tom.wav"></audio>
+        <audio id="dat" src="audio/tink.wav"></audio>
+
+        <button id="do" class="do" onclick="clickDo();" > Do </button>
+        <button id="re" class="re" onclick="clickRe()" > Re </button>
+        <button id="mi" class="mi" onclick="clickMi()" > Mi </button>
+        <button id="fa" class="fa" onclick="clickFa()" > Fa </button>
+        <button id="sol" class="sol" onclick="clickSol()" > Sol </button>
+        <button id="la" class="la" onclick="clickLa()" > La </button>
+        <button id="si" class="si" onclick="clickSi()" > Si </button>
+        <button id="thick-do" class="thick-do" onclick="clickTdo()" > <strong>Do</strong> </button>
+        <button id="dat" class="." onclick="clickDat()" > . </button>
+        
+    </section>
+    <footer class="footer">
+        <button class="red" onclick="saveMusic();" >Save Music</button>
+        <button class="green" onclick="playSavedMusic();" >Play Save Music</button>
+    </footer>
+
+    <script src="js/audio.js"></script>
+
+</body>
+</html>
