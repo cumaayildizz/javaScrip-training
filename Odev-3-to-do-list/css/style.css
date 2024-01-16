@@ -1,0 +1,129 @@
+/* Tüm elementlerin box modelini border-box olarak ayarla */
+* {
+  box-sizing: border-box;
+}
+
+/* Liste elemanlarının varsayılan margin ve padding değerlerini sıfırla */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Liste elemanlarının stilini belirle */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+
+  /* Metni seçilemez yap */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Liste elemanlarının arka plan rengini sırayla değiştir */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Liste elemanlarının üzerine gelindiğinde arka plan rengini değiştir */
+ul li:hover {
+  background: #ddd;
+}
+
+/* Checked sınıfına sahip liste elemanlarının stilini belirle */
+ul li.checked {
+  background: #276678;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Checked sınıfına sahip liste elemanlarının önceki içeriğini belirle */
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Kapatma (close) butonlarının stilini belirle */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+/* Kapatma (close) butonlarının üzerine gelindiğinde stilini değiştir */
+.close:hover {
+  background-color: #f78501;
+  color: white;
+}
+
+/* Sayfa başlığının stilini belirle */
+.header {
+  display: block;
+  background-color: #f78501;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Resimlerin arka plan rengini belirle */
+img {
+  background-color: white;
+}
+
+/* Header sonrasındaki içeriklerin float özelliğini temizle */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Input alanının stilini belirle */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Butonun stilini belirle */
+.button {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+/* Butonun üzerine gelindiğinde stilini değiştir */
+.button:hover {
+  background-color: #bbb;
+}
+
+.toast-style {
+  position: absolute; 
+  top: 0; 
+  right: 0
+}
